@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Task 4 - Smart To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="Task4.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h3 style="text-align:center; color:#4e89ff; font-weight:bold; margin-bottom:20px"> Task 4: Smart To-Do List</h3>
+
+        <div class="task-summary" id="taskSummary">
+            <div><strong>Total: </strong><span id="totalTasks">0</span></div>
+            <div><strong>Completed: </strong><span id="completedTasks">0</span></div>
+            <div><strong>Pending: </strong><span id="pendingTasks">0</span></div>
+        </div>
+
+        <div class="form-section">
+            <div><input type="text" id="task" placeholder="Enter task..."/></div>
+            <div><input type="number" id="durationValue" min="1" placeholder="Time"/></div>
+            <div>
+                <select id="durationUnit">
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div><input type="date" id="date"/></div>
+            <div>
+                <select id="category">
+                    <option value="Work">Work</option>
+                    <option value="Study">Study</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Fitness">Fitness</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Cleaning">Cleaning</option>
+                    <option value="Exercise">Exercise</option>
+                    <option value="Reading">Reading</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Project">Project</option>
+                    <option value="Meeting">Meeting</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div><button class="btn" id="addTaskBtn" onclick="handleTask()">➕ Add Task</button></div>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+ <script src="Task4.js"></script>
+    
+</body>
+</html>
